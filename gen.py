@@ -1,6 +1,7 @@
 import asyncio
 import time
-from pyrogram import Client, StringSession
+from pyrogram import Client
+from pyrogram.session import StringSession  
 from colorama import Fore, Style
 
 SESSION_FILE = "session.txt"
@@ -38,4 +39,6 @@ async def generate_session():
 
         print(f"\n{Fore.GREEN}✅ **Session Generated Successfully!**{Style.RESET_ALL}")
         print(f"🔑 **Your Session String (saved to {SESSION_FILE}):**\n{session_string}")
-    
+        print(f"\n{Fore.YELLOW}⚠️ **Save this string safely! Do not share it with anyone.**{Style.RESET_ALL}")
+
+asyncio.run(generate_session())
