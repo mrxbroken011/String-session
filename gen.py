@@ -1,7 +1,6 @@
 import asyncio
 import time
 from pyrogram import Client
-from pyrogram.types import StringSession   
 from colorama import Fore, Style
 
 SESSION_FILE = "session.txt"
@@ -13,7 +12,7 @@ async def generate_session():
         print(f"{Fore.RED}.{Style.RESET_ALL}", end="", flush=True)
     print("\n")
 
-    print(f"{Fore.GREEN}{Style.BRIGHT}Welcome to Pyrogram v2 String Session Generator!{Style.RESET_ALL}")
+    print(f"{Fore.GREEN}{Style.BRIGHT}Welcome to Pyrogram v2 Session Generator!{Style.RESET_ALL}")
     print(f"{Fore.BLUE}By @Brokenxnetwork{Style.RESET_ALL}\n")
 
     api_id = int(input("Enter your API ID: ").strip())
@@ -25,7 +24,7 @@ async def generate_session():
     phone_number = input("Enter your phone number (with country code, without +): ").strip()
     print(f"{Fore.GREEN}⏳ Please wait... Sending OTP...{Style.RESET_ALL}\n")
 
-    async with Client(StringSession(), api_id, api_hash) as app:
+    async with Client("my_account", api_id, api_hash) as app:  # No StringSession
         sent_code = await app.send_code(phone_number)
         phone_code_hash = sent_code.phone_code_hash
 
