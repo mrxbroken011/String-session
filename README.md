@@ -16,6 +16,13 @@ python gen.py
 ```
 ### REQUIREMENTS
 `API_ID` `API_HASH` `PHONENUM`
-ENTER PHONE NO WITH COUNTY CODE WITHOUT "+"
+<br><b>You need API credentials from</b> my.telegram.org
 
-EXAMPLE : 9197xxxxxxxxx
+-Go to [Here](my.telegram.org) 
+-Log in with your Telegram account.
+-Click on "API Development Tools".
+-Copy API ID and API Hash for use in the script.
+
+<b>ENTER `API_ID` `API_HASH` and `PHONENO` WITH COUNTY CODE WITHOUT "+"
+EXAMPLE : 9197xxxxxxxxx</b>
+
