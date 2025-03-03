@@ -1,7 +1,7 @@
 import asyncio
 import time
 from pyrogram import Client
-from pyrogram.session import StringSession  
+from pyrogram.types import StringSession   
 from colorama import Fore, Style
 
 SESSION_FILE = "session.txt"
