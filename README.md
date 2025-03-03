@@ -7,12 +7,14 @@ cd String-session
 ```
 ## install Requirements
 
-```sh:
-pip install pyrogram tgcrypto
+```
+sh:
+pip install pyrogram tgcrypto colorama
 ```
 ### Run
-```bash:
-python3 gen.py
+```
+bash:
+python gen.py
 ```
 ### REQUIREMENTS
 `API_ID` `API_HASH` `PHONENUM`
