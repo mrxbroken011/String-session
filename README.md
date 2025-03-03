@@ -7,16 +7,14 @@ cd String-session
 ```
 ## install Requirements
 
-```
-sh:
+```sh:
 pip install pyrogram tgcrypto colorama
 ```
 ### Run
-```
-bash:
+```bash:
 python gen.py
 ```
 ### REQUIREMENTS
 `API_ID` `API_HASH` `PHONENUM`
-ENTER PHONE NO WITH COUNTY CODE WITHOUT "+" 
+ENTER PHONE NO WITH COUNTY CODE WITHOUT "+"\n 
 EXAMPLE : 9197xxxxxxxxx
